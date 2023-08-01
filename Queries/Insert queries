@@ -1,3 +1,4 @@
+Electronics products
 INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
 VALUES (1, 'Samsung Galaxy S21', 'Flagship smartphone with a stunning display and powerful performance.', 'Electronics', 799.99, 50, 'Samsung','https://cdn.dxomark.com/wp-content/uploads/medias/post-74826/SamsungGalaxys215g.jpg ', 4.5);
 INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand,  image_url, rating)
@@ -15,7 +16,56 @@ VALUES (7, 'PlayStation 5 (PS5)', 'Experience the next generation of gaming with
 INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
 VALUES (8, 'Apple Watch Series 7', 'Stay connected and track your health with this advanced smartwatch.', 'Electronics', 199.00, 40, 'Apple',  'https://s.catch.com.au/images/product/0057/57566/6165cbfe07e70655291205.jpg', 4.4);
 INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
-VALUES (9, 'Linksys AC2200 Mesh Wi-Fi Router', 'Ensure fast and reliable internet connectivity throughout your home with this Wi-Fi router.', 'Electronics', 79.00, 50, 'Linksys', '', 4.1);
+VALUES (9, 'Linksys AC2200 Mesh Wi-Fi Router', 'Ensure fast and reliable internet connectivity throughout your home with this Wi-Fi router.', 'Electronics', 79.00, 50, 'Linksys', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6309/6309260_ra.jpg', 4.1);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand,  image_url, rating)
+VALUES (10, 'Logitech MX Master 3 Wireless Mouse', 'Enhance your productivity with this advanced wireless mouse featuring customizable buttons and ergonomic design.', 'Electronics', 79.99, 60, 'Logitech', 'https://www.bhphotovideo.com/images/images2500x2500/logitech_910_005647_mx_master_3_wireless_1502446.jpg', 4.6);
+
+Clothing and accessories
 INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
-VALUES (10, 'Western Digital My Passport 2TB External Hard Drive', 'Store and backup your data with this portable and spacious external hard drive.', 'Electronics', 129.99, 80, 'Western Digital', '', 4.0);
+VALUES (11, 'Women's Leather Jacket', 'Fashionable leather jacket for women.', 'Clothing and Accessories', 169.99, 30, 'StylishChic', 'https://images-na.ssl-images-amazon.com/images/I/61z7rEkgkyL._AC_UL1470_.jpg', 4.7);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (12, 'Men's Oxford Shoes', 'Elegant oxford shoes for men.', 'Clothing and Accessories', 99.95, 50, 'ClassicGent', 'https://dhb3yazwboecu.cloudfront.net/909/mens_oxfords_shoes_80386_brown_l-2.jpg', 4.5);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (13, 'Women's Floral Print Dress', 'Stylish floral print dress for women.', 'Clothing and Accessories', 54.99, 80, 'ElegantFlora', 'https://i5.walmartimages.com/asr/f1ca24f5-5940-4181-844b-860f17adc59f_1.98013ad2a58cccb39421a36729dbc33d.jpeg', 4.2);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (14, 'Men's Casual T-Shirt', 'Comfortable and casual t-shirt for men.', 'Clothing and Accessories', 24.99, 60, 'FashionBrandX', 'https://modone.com/eng_pl_Mens-plain-t-shirt-S1323-light-blue-15421_1.jpg', 4.6);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (15, 'Women's Crossbody Bag', 'Chic crossbody bag for women.', 'Clothing and Accessories', 69.95, 40, 'FashionBrandY', 'https://image26.stylesimo.com/o_img/2018/05/09/254398-10543166/vintage-solid-leather-handbag-cross-body-women-shoulder-bag-with-tassels.jpg', 4.3);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (16, 'Unisex Canvas Belt', 'Stylish canvas belt for all genders.', 'Clothing and Accessories', 19.99, 100, 'UrbanTrends', 'https://ae01.alicdn.com/kf/HTB1ubMhkDTI8KJjSsphq6AFppXae/Best-YBT-Unisex-Canvas-belt-Alloy-Double-ring-buckle-Weaving-Canvas-belt-casual-youth-men-student.jpg_640x640.jpg', 4.8);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (17, 'Women's Wide-Leg Jumpsuit', 'Fashionable wide-leg jumpsuit for women.', 'Clothing and Accessories', 79.99, 25, 'FashionBrandZ', 'https://m.media-amazon.com/images/I/81EF1CeWZVL._AC_UY1100_.jpg', 4.6);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (18, 'Men's Vintage Sunglasses', 'Classic vintage sunglasses for men.', 'Clothing and Accessories', 29.95, 70, 'FashionBrandX', 'https://www.topsunglasses.net/wp-content/uploads/2016/12/Mens-Vintage-Sunglasses.jpg', 4.4);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (19, 'Women's Knit Sweater', 'Cozy knit sweater for women.', 'Clothing and Accessories', 49.99, 120, 'FashionBrandY', 'https://images-na.ssl-images-amazon.com/images/I/71xQ%2BBmc2dL._AC_UL1500_.jpg', 4.1);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (20, 'Unisex Canvas Backpack', 'Durable canvas backpack for all genders.', 'Clothing and Accessories', 39.95, 90, 'AccessoriesCo', 'https://ae01.alicdn.com/kf/HTB1Ez.FapkoBKNjSZFEq6zrEVXad/Hot-Unisex-Anti-theft-Canvas-Backpacks-High-Capacity-Casual-Travel-Rucksacks-USB-Charging-Laptop-Bags-Student.jpg', 4.5);
+
+Household and kitchen
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (21, 'Smart Refrigerator', 'Large capacity smart refrigerator with advanced features.', 'Household and Kitchen Appliances', 999.99, 20, 'SmartTech', 'https://thingamagift.com/wp-content/uploads/2018/03/Samsung-smart-Refrigerator-750x750.jpg', 4.5);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (22, 'Robotic Vacuum Cleaner', 'Smart robotic vacuum cleaner for effortless cleaning.', 'Household and Kitchen Appliances', 199.95, 50, 'CleanBot', 'https://goodz4u.files.wordpress.com/2019/09/itself.jpg', 4.7);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (23, 'Microwave Oven', 'Efficient microwave oven for quick cooking.', 'Household and Kitchen Appliances', 79.99, 80, 'QuickCook', 'https://www.jungle.lk/wp-content/uploads/2019/08/LG-28L-White-Color-1950W-Convection-Microwave-Oven-MC2846SL-feature-image.jpg', 4.3);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (24, 'Coffee Maker', 'Versatile coffee maker for brewing your favorite coffee.', 'Household and Kitchen Appliances', 49.99, 60, 'BrewMaster', 'https://digital.hammacher.com/Items/84377/84377_1000x1000.jpg', 4.8);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (25, 'Air Fryer', 'Healthy air fryer for crispy and oil-free cooking.', 'Household and Kitchen Appliances', 89.95, 40, 'CrispEats', 'https://example.com/air_fryer.jpg', 4.6);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (26, 'Electric Kettle', 'Convenient electric kettle for boiling water.', 'Household and Kitchen Appliances', 29.99, 100, 'RapidBoil', 'https://example.com/electric_kettle.jpg', 4.5);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (27, 'Toaster', 'Classic toaster for perfectly toasted bread.', 'Household and Kitchen Appliances', 24.99, 25, 'Toasty', 'https://example.com/toaster.jpg', 4.9);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (28, 'Slow Cooker', 'Efficient slow cooker for delicious meals.', 'Household and Kitchen Appliances', 49.95, 70, 'SlowAndSteady', 'https://example.com/slow_cooker.jpg', 4.4);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (29, 'Hand Blender', 'Versatile hand blender for blending and pureeing.', 'Household and Kitchen Appliances', 34.99, 120, 'BlendMaster', 'https://example.com/hand_blender.jpg', 4.1);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (30, 'Food Processor', 'Powerful food processor for chopping and slicing.', 'Household and Kitchen Appliances', 79.95, 90, 'ChopSlice', 'https://example.com/food_processor.jpg', 4.5);
+
+
+
+
+
 
