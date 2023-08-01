@@ -30,3 +30,10 @@ Tables
 |--Products
 |--Retailers
 |--Admin
+
+Categories :
+1. Electronics
+2. Clothing and Accessories
+3. Household and kitchen appliances
+4. Toys and Games
+5. Groceries
