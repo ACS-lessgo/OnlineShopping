@@ -1,0 +1,21 @@
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (1, 'Samsung Galaxy S21', 'Flagship smartphone with a stunning display and powerful performance.', 'Electronics', 799.99, 50, 'Samsung','https://cdn.dxomark.com/wp-content/uploads/medias/post-74826/SamsungGalaxys215g.jpg ', 4.5);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand,  image_url, rating)
+VALUES (2, 'LG 55-inch 4K Smart TV', 'Immerse yourself in a world of entertainment with this stunning 55-inch smart TV.', 'Electronics', 1299.00, 20, 'LG', 'https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1600/https://www.martnextdoor.com/wp-content/uploads/2019/10/zoom-01.jpg', 4.7);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand,  image_url, rating)
+VALUES (3, 'Sony WF-1000XM4 Noise-Canceling Earbuds', 'Experience superior sound quality and noise cancellation with these true wireless earbuds.', 'Electronics', 149.99, 100, 'Sony','https://example.com/sony_wf1000xm4_earbuds.jpg', 4.2);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand,  image_url, rating)
+VALUES (4, 'Dell XPS 15 Laptop', 'A high-performance laptop designed for work and gaming enthusiasts.', 'Electronics', 999.00, 30, 'Dell', 'https://thegadgetflow.com/wp-content/uploads/2018/01/touchcreen-laptop-02.jpg', 4.8);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand,  image_url, rating)
+VALUES (5, 'JBL Charge 5 Bluetooth Speaker', 'Enjoy powerful sound and long-lasting battery life with this portable Bluetooth speaker.', 'Electronics', 79.99, 60, 'JBL',  'https://assets.products-live.ao.com/Images/a67ef5e7-134d-45fd-beaf-3c530e35f971/1280x1280/89133539_1495459391_1.jpg', 4.3);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (6, 'Canon EOS M50 Mark II Camera', 'Capture stunning photos and videos with this compact and feature-packed digital camera.', 'Electronics', 349.00, 25, 'Canon',  'https://www.bhphotovideo.com/images/images1000x1000/canon_4728c006_eos_m50_mark_ii_1598385.jpg', 4.6);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand,  image_url, rating)
+VALUES (7, 'PlayStation 5 (PS5)', 'Experience the next generation of gaming with this powerful gaming console.', 'Electronics', 499.99, 15, 'Sony', 'https://cdn1.smartprix.com/rx-iRb1Qj5zT-w1200-h1200/sony-playstation-5-p.jpg', 4.9);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (8, 'Apple Watch Series 7', 'Stay connected and track your health with this advanced smartwatch.', 'Electronics', 199.00, 40, 'Apple',  'https://s.catch.com.au/images/product/0057/57566/6165cbfe07e70655291205.jpg', 4.4);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (9, 'Linksys AC2200 Mesh Wi-Fi Router', 'Ensure fast and reliable internet connectivity throughout your home with this Wi-Fi router.', 'Electronics', 79.00, 50, 'Linksys', '', 4.1);
+INSERT INTO products (product_id, product_name, description, category, price, quantity_in_stock, brand, image_url, rating)
+VALUES (10, 'Western Digital My Passport 2TB External Hard Drive', 'Store and backup your data with this portable and spacious external hard drive.', 'Electronics', 129.99, 80, 'Western Digital', '', 4.0);
+
