@@ -23,3 +23,10 @@
 │ └── retailers.txt
 └── config.properties
 
+-----
+Tables
+|
+|--User
+|--Products
+|--Retailers
+|--Admin
