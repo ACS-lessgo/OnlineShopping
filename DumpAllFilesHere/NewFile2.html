@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Products by Retailer</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+        margin: 20px; /* Add margin to create spacing from the top */
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Supermarket_full_of_goods.jpg/440px-Supermarket_full_of_goods.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: fade-in 0.5s;
+            margin-top: 50px;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form label {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            flex-basis: calc(50% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: border-color 0.2s;
+            resize: vertical; /* Allow vertical resizing for textarea */
+        }
+
+        input:focus, textarea:focus {
+            border-color: #007bff;
+        }
+
+        button {
+            flex-basis: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #productList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-top: 30px;
+        }
+
+        .product-item {
+            width: calc(50% - 20px);
+            margin: 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            animation: slide-up 0.3s;
+            transition: box-shadow 0.2s;
+        }
+
+        .product-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item h3 {
+            margin: 0;
+            color: #007bff;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .product-item p {
+            margin: 0;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .delete-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        .delete-button:hover {
+            background-color: #c82333;
+        }
+
+        .error {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        /* Custom styles for the rating field */
+        #rating {
+            flex-basis: calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        transition: border-color 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Products by Retailer</h1>
+
+        <form id="productForm">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="productId">Product ID:</label>
+                        <input type="text" id="productId" class="form-control" required>
+                        <div id="productId-error" class="error"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" id="productName" class="form-control" required>
+                        <div id="productName-error" class="error"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <input type="text" id="description" class="form-control" required>
+                        <div id="description-error" class="error"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <input type="text" id="category" class="form-control" required>
+                        <div id="category-error" class="error"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" step="0.01" class="form-control" required>
+                        <div id="price-error" class="error"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="quantityInStock">Quantity in Stock:</label>
+                        <input type="number" id="quantityInStock" class="form-control" required>
+                        <div id="quantityInStock-error" class="error"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="brand">Brand:</label>
+                        <textarea id="brand" class="form-control" rows="3" required></textarea>
+                        <div id="brand-error" class="error"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="imageUrl">Image URL:</label>
+                        <textarea id="imageUrl" class="form-control" rows="3" required></textarea>
+                        <div id="imageUrl-error" class="error"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <textarea id="rating" class="form-control" rows="3" required></textarea>
+                        <div id="rating-error" class="error"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+
+        <div id="productList">
+            <!-- Product list will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const productForm = document.getElementById('productForm');
+        const productList = document.getElementById('productList');
+
+        productForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const productName = document.getElementById('productName').value;
+            const productPrice = parseFloat(document.getElementById('price').value);
+            const productQuantity = parseInt(document.getElementById('quantityInStock').value);
+            const productId = document.getElementById('productId').value;
+            const description = document.getElementById('description').value;
+            const category = document.getElementById('category').value;
+            const brand = document.getElementById('brand').value;
+            const imageUrl = document.getElementById('imageUrl').value;
+            const rating = parseFloat(document.getElementById('rating').value);
+
+            // Validation for name, price, quantity, and other fields (similar to previous code)
+
+            addProductToInventory(
+                productName,
+                productPrice,
+                productQuantity,
+                productId,
+                description,
+                category,
+                brand,
+                imageUrl,
+                rating
+            );
+
+            productForm.reset();
+        });
+function addProductToInventory(name, price, quantity, productId, description, category, brand, imageUrl, rating) {
+    const productItem = document.createElement('div');
+    productItem.classList.add('product-item');
+    productItem.innerHTML = `
+        <h3>${name}</h3>
+        <p>Price: $${price.toFixed(2)}</p>
+        <p>Quantity: ${quantity}</p>
+        <p>Product ID: ${productId}</p>
+        <p>Description: ${description}</p>
+        <p>Category: ${category}</p>
+        <p>Brand: ${brand}</p>
+        <p>Rating: ${rating}</p>
+                <p>Image URL: ${imageUrl}</p> <!-- Displaying the image URL itself -->
+
+        <button class="delete-button" onclick="deleteProduct(this)">X</button>
+    `;
+
+    productList.appendChild(productItem);
+}
+
+
+
+        function deleteProduct(button) {
+            const productItem = button.parentElement;
+            productList.removeChild(productItem);
+        }
+    </script>
+</body>
+
+</html>
