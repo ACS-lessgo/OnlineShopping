@@ -1,0 +1,24 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  .h-custom {
+    height: calc(100% - 56px);
+  }
+  
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #projecttitle3 {
+    padding-left: 5%;
+    padding-right: 70%;
+    text-size-adjust: 2rem;
+}

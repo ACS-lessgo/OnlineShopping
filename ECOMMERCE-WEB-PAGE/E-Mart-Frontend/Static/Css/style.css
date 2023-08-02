@@ -1,0 +1,41 @@
+#projecttitle {
+    padding-left: 5%;
+    padding-right: 70%;
+    text-size-adjust: 2rem;
+}
+
+#indexnav {
+    padding: 1.5rem 0;
+}
+
+
+.card {
+    width: 18rem;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.homepageproducts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns with equal width */
+    gap: 20px;
+    /* Space between cards */
+}
+
+.product-grid {
+    grid-column: 1 / span 3;
+    /* Product grid occupies the first 3 columns */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns with equal width */
+    gap: 20px;
+    /* Space between product cards */
+}
+
+.additional-cards {
+    grid-column: 4;
+    /* Additional cards occupy the 4th column */
+}
+
