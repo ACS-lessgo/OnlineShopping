@@ -32,6 +32,55 @@ Abstract:
 Agile development is a group of software development methodology based on iterative and incremental development, in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. 
  
 Steps to follow in Agile methodology: 
+
+---
+# Approach
+
+- To integrate your HTML/CSS files with a database (HSQLDB) and build an eCommerce webpage, you can use Java Server Pages (JSP) along with Java as the backend language. Here's a step-by-step guide on how to approach the integration:
+
+Set up your Java Development Environment:
+
+- Install Java Development Kit (JDK) on your computer.
+Set up a code editor or Integrated Development Environment (IDE) for Java development. Eclipse, IntelliJ IDEA, or Visual Studio Code with appropriate extensions are popular choices.
+Create a Java Web Project:
+
+- Set up a new Java web project in your IDE.
+Ensure that your project is configured to use a Java server, such as Apache Tomcat.
+Design the Database Schema:
+
+- Plan and design the database schema for your eCommerce application using HSQLDB. Define tables for products, users, orders, etc.
+Create the necessary SQL scripts to create tables, insert initial data, and set up the database.
+Establish the Database Connection:
+
+- Use JDBC (Java Database Connectivity) to connect your Java application to the HSQLDB database.
+Implement a database utility class to manage database connections and query execution.
+Convert HTML/CSS to JSP Pages:
+
+- Convert your HTML/CSS files into JSP pages. JSP allows you to embed Java code within HTML to dynamically generate content.
+Use JSP tags (such as <jsp:include> or custom tags) to modularize and reuse parts of your web page layout.
+Implement Java Servlets or Controllers:
+
+- Create Java servlets or controllers to handle incoming HTTP requests from the JSP pages.
+Use Java to process data from the database and pass the necessary information to the JSP pages.
+Implement eCommerce Features:
+
+- Implement shopping cart functionality, user registration, login, product listing, and checkout features using Java and JSP.
+Use Java classes to handle the business logic, such as adding items to the cart, calculating totals, and processing orders.
+Use JSTL (JavaServer Pages Standard Tag Library):
+
+- JSTL provides a set of custom tags for common web development tasks, such as iteration, conditionals, and formatting.
+Utilize JSTL tags in your JSP pages to keep the Java code clean and separated from the presentation layer.
+Test and Debug:
+
+- Thoroughly test your eCommerce application, including functionality, user experience, and database interactions.
+Debug and fix any issues that you encounter during testing.
+Deploy and Run:
+
+- Deploy your Java web application on the Java server (e.g., Apache Tomcat).
+Access your eCommerce application through a web browser and verify that it works as expected.
+Remember to follow best practices for security, such as preventing SQL injection and protecting sensitive data like user passwords.
+
+ -Integrating HTML/CSS, Java, and HSQLDB using JSP allows you to build dynamic and interactive eCommerce web pages that can interact with the database and provide a seamless shopping experience for users.
 •	You need to identify various user stories and its modules/tasks which needs to be implemented in the project as a part of Sprint planning.  
 •	Divide all the user stories in two Sprints. Duration of each Sprint will be 3 days.  
 •	Any backlogs of Sprint 1 should be included in Sprint 2 along with stories of Sprint 2. 
